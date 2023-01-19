@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    background: rgb(91, 10, 131); 
+    gap: 40px;
+    margin-top: 80px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+header img {
+    height: 45px;
+}
+h1{
+    color: aliceblue;
+}
+.input-group {
+    width: 500px;
+    height: auto;
+    gap: 10px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.text {
+    border: 2px solid #111;
+    width: 380px    
+}
+.agregar{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: aliceblue;
+    font-size: 30px;
+    padding: auto;
+}
+@media screen and (max-width:600px) {
+    .input-group {
+        width: 95%;
+     
+    }
+    .text{
+        width: 85%;
+    }
+}
+
+
+.eliminar {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 12px;
+    border: none;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.agregar-tareas{
+    width: 100%;
+}
+.tareas {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 18px;
+}
+.tareas-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+span{
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.check{
+    height: 20px;
+    width: 20px;
+}
+.check:checked~span{
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width:600px) {
+    .ul{
+        width: 95%;
+    }
+
+    .tareas{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
